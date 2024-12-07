@@ -20,3 +20,4 @@ echo "正在解压ing..."
 unzip -o -d ~/storage/downloads fanqienovel-downloader-main.zip
 cd ~/storage/downloads/fanqienovel-downloader-main
 sed -i '/from tkinter import Tk, filedialog/d' ./src/ref_main.py
+python ./src/ref_main.py
