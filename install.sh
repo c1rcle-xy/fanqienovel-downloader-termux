@@ -19,5 +19,5 @@ curl -o fanqienovel-downloader-main.zip "https://codeload.github.com/ying-ck/fan
 echo "正在解压ing..."
 unzip -o -d ~/storage/downloads fanqienovel-downloader-main.zip
 cd ~/storage/downloads/fanqienovel-downloader-main/src
-sed -i '/from tkinter import Tk, filedialog/d' ref_main.py
+sed -i '5d' ref_main.py
 python ref_main.py
