@@ -18,6 +18,6 @@ echo "正在从 GitHub 下载项目文件，此处可能需要科学上网，快
 curl -o fanqienovel-downloader-main.zip "https://codeload.github.com/ying-ck/fanqienovel-downloader/zip/refs/heads/main" || { echo "下载失败，请尝试使用科学上网(〒﹏〒)"; exit 1; }
 echo "正在解压ing..."
 unzip -o -d ~/storage/downloads fanqienovel-downloader-main.zip
-cd ~/storage/downloads/fanqienovel-downloader-main
-sed -i '/from tkinter import Tk, filedialog/d' ./src/ref_main.py
-python ./src/ref_main.py
+cd ~/storage/downloads/fanqienovel-downloader-main/src
+sed -i '/from tkinter import Tk, filedialog/d' ref_main.py
+python ref_main.py
