@@ -1,5 +1,5 @@
 termux-setup-storage
-echo -e "\e[4m请赋予termux存储权限，如已赋予请忽视"
+echo "请赋予termux存储权限，如已赋予请忽视"
 sed -i 's@^ $deb.*stable main$ $@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main stable main@' $PREFIX/etc/apt/sources.list
 apt update && apt upgrade
 #pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
