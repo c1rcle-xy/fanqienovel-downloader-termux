@@ -20,4 +20,7 @@ echo "正在解压ing..."
 unzip -o -d ~/storage/downloads fanqienovel-downloader-main.zip
 cd ~/storage/downloads/fanqienovel-downloader-main/src
 sed -i '5d' ref_main.py
+#删tk库
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/c1rcle-xy/FQToolBox-termux/refs/heads/main/fqtoolbox.sh)"
+#环境变量
 python ref_main.py
