@@ -5,7 +5,7 @@ apt update && apt upgrade
 #pip config set global.index-url https://mirrors.aliyun.com/pypi/simple
 #换源
 apt update && apt upgrade
-pkg install python libxml2 libxslt pkg-config
+pkg install python libxml2 libxslt pkg-config openssl -y
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 #pip换源
 #pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
