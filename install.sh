@@ -24,6 +24,6 @@ sed -i '5d' ref_main.py
 #删tk库
 sed -i '$ a\alias fq="cd ~/storage/downloads/fanqienovel-downloader-main/src && python ./ref_main.py"' ~/.bashrc
 #source ~/.bashrc
-#这里不知道为什么运行的时候会出错，导致环境变量无法立马生效，索性删掉了，如果各位有解决方法的话可以发个pr
+#这里不知道为什么运行的时候会出错，导致环境变量无法立马生效，索性删掉了，有解决方法的大佬可以发个pr
 #环境变量
 python ref_main.py
