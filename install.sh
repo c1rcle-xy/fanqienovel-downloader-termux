@@ -12,7 +12,7 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip install cython wheel
 CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install lxml
 #安装最难装的lxml库（这个方法我也不记得在哪找的了）
-pip install requests lxml ebooklib tqdm beautifulsoup4
+pip install requests lxml ebooklib tqdm beautifulsoup4 qrcode
 #其他库
 echo "正在从 GitHub 下载项目文件，此处可能需要科学上网，快了快了←_←"
 curl -o fanqienovel-downloader-main.zip "https://ghproxy.net/https://github.com/ying-ck/fanqienovel-downloader/archive/refs/heads/main.zip" || { echo "下载失败，请尝试使用科学上网(〒﹏〒)"; exit 1; }
